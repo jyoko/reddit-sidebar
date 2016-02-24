@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Reddit Sidebar Offscreen
 // @namespace    https://jyoko.github.io/
-// @version      1.2
+// @version      1.3
 // @description  Moves Reddit right sidebar offscreen, uses "q" to toggle
 // @author       jyoko
 // @downloadURL  https://raw.githubusercontent.com/jyoko/reddit-sidebar/master/script.js
@@ -13,7 +13,7 @@
 
 if (window.hasOwnProperty('$')) {
   window.addEventListener('keyup', function(e) {
-    if (e.target.tagName === 'TEXTAREA') return;
+    if (e.target.tagname === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
     if (e.keyCode === 81) { // q
       toggler($('.side'));
     }
