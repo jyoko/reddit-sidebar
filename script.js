@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         Reddit Sidebar Offscreen
 // @namespace    https://jyoko.github.io/
-// @version      1.1
+// @version      1.2
 // @description  Moves Reddit right sidebar offscreen, uses "q" to toggle
 // @author       jyoko
 // @downloadURL  https://raw.githubusercontent.com/jyoko/reddit-sidebar/master/script.js
-// @include      http*://*.reddit.com/
+// @include      http*://*.reddit.com*
 // @grant        none
 // ==/UserScript==
 /* jshint -W097 */
